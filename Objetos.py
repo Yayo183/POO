@@ -23,20 +23,27 @@ villano = Personaje(especieV,nombreV,AlturaV)
 
 #3. Usar atributos
 
+#ejemplo de set para 1 atributo
+heroe.set_Nombre("Pepe pecas")
+
+
 print("")
 print("###### Objeto Heroe ####")
-print("El personaje se llama: " + heroe.Nombre)
-print("El pertenece a la especie: " + heroe.especie)
-print("Tiene una altura de: " + str(heroe.Alturas))
+print("El personaje se llama: " + heroe.get_Nombre())
+print("El pertenece a la especie: " + heroe.get_Especie())
+print("Tiene una altura de: " + str(heroe.get_Alturas()))
 heroe.correr(True)
 heroe.LanzarGranadas()
 heroe.RecargarArma(recargaH)
 
+#ejemplo de un metodo privado
+#heroe.__pensar()
+
 print("")
 print("###### Objeto villano ####")
-print("El personaje se llama: " + villano.Nombre)
-print("El pertenece a la especie: " + villano.especie)
-print("Tiene una altura de: " + str(villano.Alturas))
+print("El personaje se llama: " + villano.get_Nombre())
+print("El pertenece a la especie: " + villano.get_Especie())
+print("Tiene una altura de: " + str(villano.get_Alturas()))
 villano.correr(True)
 villano.LanzarGranadas()
 villano.RecargarArma(recargaV)
