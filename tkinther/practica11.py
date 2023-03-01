@@ -1,8 +1,16 @@
 from tkinter import Tk,Button,Frame,messagebox
 
+#declaramos las funciones
 def mostrarMensajes():
-    messagebox.showinfo("Aviso","Presionaste el boton")
+    messagebox.showinfo("Aviso","Presionaste el boton azul")
+    messagebox.showinfo("Error","Todo fallo con exito")
+    print(messagebox.askretrycancel("¿Pregunta", "Ella jugo con tu corazon?"))
     
+#6.Funcion para agregar botones
+def agregarBoton():
+    bottonVerde.config(text="+",bg="green",fg="white")
+    botonNuevo = Button(seccion3,text="Nuevo")
+    botonNuevo.pack()    
     
 #1.Instanciamos el objeto ventana
 ventana = Tk()
@@ -29,7 +37,7 @@ bottonNegro.grid(row= 0,column= 0)
 bottonAmarillo= Button(seccion2,text="boton Negro",fg="black",bg='#E6F40C',command=mostrarMensajes)
 bottonAmarillo.grid(row=1,column=1)
 
-bottonVerde= Button(seccion3,text="boton Negro",fg="black",bg='#10D938',command=mostrarMensajes)
+bottonVerde= Button(seccion3,text="boton Negro",fg="black",bg='#10D938',command=agregarBoton)
 bottonVerde.configure(height=2, width=10)
 bottonVerde.pack()
 
