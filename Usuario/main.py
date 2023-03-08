@@ -76,3 +76,4 @@ if __name__ == "__main__":
     user1 = Usuario("lucas","1234")
     usuarios.append(user1)
     creatGUI()
+
