@@ -9,10 +9,13 @@ class Password:
         self._Numeros= "0123456789"
         
     def generadorPassword(self):
-        Juntar = f'{self._Letras}{self._Numeros}{self._Simbolos}'
-        longitud = 8
-        Password = random.sample(Juntar, longitud)
-        Contra = "".join(Password)
-        return Contra
+        print("Para generar tu password que te gustaria")
+        
 
-    #print(self.generadorPassword())
+        
+        
+        #Juntar = f'{self._Letras}{self._Numeros}{self._Simbolos}'
+        #longitud = 8
+        #Password = random.sample(Juntar, longitud)
+        #Contra = "".join(Password)
+        #return Contra
